@@ -4,6 +4,7 @@
   <meta charset='utf-8'>
 
   <link rel="stylesheet" href="libs/angular-material.min.css">
+  <link rel="stylesheet" href="libs/fa/css/font-awesome.min.css">
   <link rel="stylesheet" href="css/main.css">
 
 </head>
@@ -11,13 +12,8 @@
 <body ng-controller='MainCtrl'>
 
   <div class='contenido'>
-    <p>¡Bienvenido!</p>
-
-
-    <md-button class="md-raised md-primary">Ingresar</md-button>
+    <ng-view></ng-view>
   </div>
-
-
 
 
   <!-- DEPENDENCIAS PARA UTILIZAR ANGULAR Y ANGULAR MATERIAL -->
@@ -26,11 +22,18 @@
   <script src="libs/angular-animate.min.js"></script>
   <script src="libs/angular-aria.min.js"></script>
   <script src="libs/angular-material.min.js"></script>
+  <script src="libs/angular-route.min.js"></script>
 
 
   <!-- APLICACION -->
   <script src='js/app.js'></script>
+  <script src='js/router.js'></script>
+
   <script src='js/controllers/mainCtrl.js'></script>
+  <script src='js/controllers/indexCtrl.js'></script>
+  <script src='js/controllers/principalCtrl.js'></script>
+
+  <script src='js/directives/rf-login.js'></script>
 
 
 </body>
